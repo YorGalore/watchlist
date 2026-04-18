@@ -2,7 +2,7 @@
 
 **Judul**: Pengembangan Sistem Manajemen Watchlist Film Berbasis Pencarian Real-Time Menggunakan Integrasi API OMDb dan Arsitektur Modern Next.js  
 **Penulis**: Freta Yordinia Laura  
-**Instansi**: Magister Ilmu Komputer  
+**Instansi**: Ilmu Komputer  
 **Tanggal**: 01 April 2026  
 
 ---

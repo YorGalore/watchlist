@@ -41,7 +41,7 @@ Sebelum melakukan rilis ke lingkungan produksi, pastikan seluruh poin berikut te
    ```bash
    DATABASE_URL="postgresql://user:password@localhost:5432/watchlist_db"
    JWT_SECRET="Gunakan_String_Acak_Dan_Panjang"
-   OMDB_API_KEY="6ce3d4a7"
+   OMDB_API_KEY="be750939"
    ```
 3. **Database & Build**:
    ```bash
