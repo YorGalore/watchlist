@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id            String      @id @default(uuid())
+  email         String      @unique
+  password_hash String
+  name          String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  watchlists    Watchlist[]
+}
+
+model Watchlist {
+  id              String   @id @default(uuid())
+  userId          String
+  external_api_id String?
+  title           String
+  year            String?
+  poster_url      String?
+  status          String   @default("PLAN_TO_WATCH")
+  rating          Int?
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  genre           String?
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, external_api_id])
+  @@index([userId, status])
+  @@index([userId, genre])
+  @@index([userId, rating])
+}
