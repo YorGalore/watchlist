@@ -5,10 +5,10 @@
  * @date 2026-03-31
  * @version 1.0.0
  */
-import { PrismaClient } from '../src/generated/prisma/client';
+import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcrypt';
 
-// @ts-expect-error Client location might vary in different environments
+
 const prisma = new PrismaClient();
 
 async function main() {

@@ -1,5 +1,6 @@
 import { getUserWatchlist } from "@/lib/services/watchlist.service";
 import { prismaMock } from "./singleton";
+import { Movie } from "@/types/movie";
 
 describe("Modul 4: Dashboard & Fitur Pemilahan (Filtering)", () => {
   const userId = "user_filtering";
